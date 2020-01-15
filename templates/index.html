@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template is working</title>
+</head>
+<body>
+<h1>Welcome to Text Analyzer. Enter you text given below</h1>
+<form action="analyze/" method="post"> {% csrf_token %}
+    <textarea name="text" spellcheck="false" style="margin: 0px; width: 732px; height: 133px;"></textarea>
+    <br>
+    <input type="checkbox" name="removepunc_check">Remove Punctuations
+    <br>
+    <input type="checkbox" name="upper_tick">Change to UPPER CASE
+    <br>
+    <input type="checkbox" name="remove_new_line">Remove New Line
+    <br>
+    <input type="checkbox" name="remove_extra_space"> Remove Extra space Remover
+    <br>
+<!--    <input type="checkbox" name="char_count"> Character Count-->
+<!--    <br>-->
+    <button type="submit">Analyze Text</button>
+</form>
+</body>
+</html>
