@@ -13,10 +13,10 @@ def navigation(request):
     s="<h1> Navigator Page! <br> </h1> <a href='https://www.linkedin.com/feed/'> Linkdlen </a> <br> <a href='https://docs.djangoproject.com/en/3.0/'> Django Documentation </a>"
     return HttpResponse(s)
 
-# def home(request):
-#     s="<button type='button'> <a href = 'http://127.0.0.1:8000/removepunc/'>Remove Punctuation</a></button> <br> " \
-#       "<button type='button'> <a href = 'http://127.0.0.1:8000/capitF/'>Capital First</a></button>"
-#    return HttpResponse(s)
+def home(request):
+    s="<button type='button'> <a href = 'http://127.0.0.1:8000/removepunc/'>Remove Punctuation</a></button> <br> " \
+      "<button type='button'> <a href = 'http://127.0.0.1:8000/capitF/'>Capital First</a></button>"
+    return HttpResponse(s)
 
 def analyze(request):
     # print(request.GET.get('text','off'))
@@ -105,7 +105,7 @@ def analyze(request):
     # print(removepunc)
     # return HttpResponse("Remove Punctuation")
 
-# def capfirst(request):
-#     return HttpResponse('''<h1>Capitalize First</h1><br>
-#                             <button type="button"><a href = "http://127.0.0.1:8000/removepunc">Go Back</a></button>''')
+def capfirst(request):
+    return HttpResponse('''<h1>Capitalize First</h1><br>
+                            <button type="button"><a href = "http://127.0.0.1:8000/removepunc">Go Back</a></button>''')
 
